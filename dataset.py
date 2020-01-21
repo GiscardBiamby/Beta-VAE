@@ -73,6 +73,8 @@ def return_data(args):
         train_kwargs = {'data_tensor':data}
         dset = CustomTensorDataset
 
+    elif name.lower() == "cifar10":
+        raise NotImplementedError
     else:
         raise NotImplementedError
 
